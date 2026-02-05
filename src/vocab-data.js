@@ -143,7 +143,11 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'Die ganze Sache sieht verdächtig aus', en: 'The whole thing looks fishy.', case: 'nom' },
+      {
+        de: 'Die ganze Sache sieht verdächtig aus',
+        en: 'The whole thing looks fishy.',
+        case: 'nom',
+      },
       {
         de: 'Wegen der Wut fing er an, im Zimmer die Sachen umherzuwerfen',
         en: 'Because of his anger, he began to throw things around in his room.',
@@ -161,7 +165,11 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'Er wird dir schon nicht gleich den Kopf abbeißen.', en: 'He won\'t bite your head off.', case: 'acc' },
+      {
+        de: 'Er wird dir schon nicht gleich den Kopf abbeißen.',
+        en: "He won't bite your head off.",
+        case: 'acc',
+      },
       {
         de: 'Sie stecken die Köpfe zusammen.',
         en: 'They put their heads together.',
@@ -179,7 +187,11 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'Das Jahn neigt sich am Ende zu.', en: 'The year draws to a close', case: 'nom' },
+      {
+        de: 'Das Jahn neigt sich am Ende zu.',
+        en: 'The year draws to a close',
+        case: 'nom',
+      },
       {
         de: 'Ich habe dreißig Jahre in Wien gewohnt.',
         en: 'I lived in Vienna for 30 years.',
@@ -197,7 +209,11 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'Das Zimmer war picobello', en: 'The room was spick and span.', case: 'nom' },
+      {
+        de: 'Das Zimmer war picobello',
+        en: 'The room was spick and span.',
+        case: 'nom',
+      },
       {
         de: 'Mit 10 renovierten Zimmern sieht das alte Herrenhaus komplett neu aus. ',
         en: 'With 10 renovated rooms, the old mansion looks completely new.',
@@ -281,11 +297,11 @@ export const VOCABULARY_COMMON = [
   {
     id: 15,
     eng: 'people',
-    article: 'die',
+    article: null,
     noun: 'Leute',
-    plural: 'REPLACE',
+    plural: 'die Leute',
     weakMasculine: false,
-    notes: {},
+    notes: { pluralNotes: ['Exists only in plural form.'] },
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: '' },
       {
@@ -321,9 +337,18 @@ export const VOCABULARY_COMMON = [
     noun: 'Haus',
     plural: 'die Häuser',
     weakMasculine: false,
-    notes: {otherWords:["Herrenhaus", "Krankenhaus", "Gasthaus"], genitiveNotes: ["Words that end in -s take an -es in the genitive to emphasize extra sibilant."]},
+    notes: {
+      otherWords: ['Herrenhaus', 'Krankenhaus', 'Gasthaus'],
+      genitiveNotes: [
+        'Words that end in -s take an -es in the genitive to emphasize extra sibilant.',
+      ],
+    },
     sentences: [
-      { de: 'Die Häuser in diesem Dorf sind klein.', en: 'The houses in this village are small.', case: 'nom' },
+      {
+        de: 'Die Häuser in diesem Dorf sind klein.',
+        en: 'The houses in this village are small.',
+        case: 'nom',
+      },
       {
         de: 'Der Mann des Hauses sitzt auf dem Stuhl',
         en: 'The man of the house sits on the chair',
@@ -607,9 +632,14 @@ export const VOCABULARY_COMMON = [
     eng: 'water',
     article: 'das',
     noun: 'Wasser',
-    plural: 'REPLACE',
+    plural: 'die Wasser',
     weakMasculine: false,
-    notes: {},
+    notes: {
+      pluralNotes: [
+        'usually uncountable',
+        'When referring to different water types, the plural is used.',
+      ],
+    },
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: '' },
       {
@@ -841,7 +871,7 @@ export const VOCABULARY_COMMON = [
     eng: 'air',
     article: 'die',
     noun: 'Luft',
-    plural: 'REPLACE',
+    plural: 'die Lüfte',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -949,7 +979,7 @@ export const VOCABULARY_COMMON = [
     eng: 'guy/type',
     article: 'der',
     noun: 'Typ',
-    plural: 'REPLACE',
+    plural: 'die Typen',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -967,7 +997,7 @@ export const VOCABULARY_COMMON = [
     eng: 'type/kind/species',
     article: 'die',
     noun: 'Art',
-    plural: 'REPLACE',
+    plural: 'die Arten',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -985,7 +1015,7 @@ export const VOCABULARY_COMMON = [
     eng: 'kind (of variety)',
     article: 'die',
     noun: 'Sorte',
-    plural: 'REPLACE',
+    plural: 'die Sorten',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -1075,7 +1105,7 @@ export const VOCABULARY_COMMON = [
     eng: 'work',
     article: 'die',
     noun: 'Arbeit',
-    plural: 'REPLACE',
+    plural: 'die Arbeiten',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -1129,9 +1159,11 @@ export const VOCABULARY_COMMON = [
     eng: 'mind',
     article: 'der',
     noun: 'Verstand',
-    plural: 'REPLACE',
+    plural: null,
     weakMasculine: false,
-    notes: {},
+    notes: {
+      pluralNotes: ["Verstand and Sinn, both being for 'mind' have no plural"],
+    },
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: '' },
       {
@@ -1327,7 +1359,7 @@ export const VOCABULARY_COMMON = [
     eng: 'money',
     article: 'das',
     noun: 'Geld',
-    plural: 'REPLACE',
+    plural: 'die Gelder',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -1759,7 +1791,7 @@ export const VOCABULARY_COMMON = [
     eng: 'love',
     article: 'die',
     noun: 'Liebe',
-    plural: 'REPLACE',
+    plural: 'die Liebe',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -1828,12 +1860,17 @@ export const VOCABULARY_COMMON = [
   },
   {
     id: 101,
-    eng: 'others',
-    article: 'die',
-    noun: 'Anderen',
-    plural: 'REPLACE',
+    eng: 'others, the rest',
+    article: null,
+    noun: 'anderen',
+    plural: 'die',
     weakMasculine: false,
-    notes: {},
+    notes: {
+      pluralNotes: [
+        'Exists only in plural form.',
+        "Although 'anderen' (from the adjective pronoun) is more common, 'Anderen' is also valid.",
+      ],
+    }, // katy
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: '' },
       {
@@ -1885,7 +1922,7 @@ export const VOCABULARY_COMMON = [
     eng: 'blood',
     article: 'das',
     noun: 'Blut',
-    plural: 'REPLACE',
+    plural: null,
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -2137,7 +2174,7 @@ export const VOCABULARY_COMMON = [
     eng: 'hell',
     article: 'die',
     noun: 'Hölle',
-    plural: 'REPLACE',
+    plural: 'die Höllen',
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -2155,7 +2192,7 @@ export const VOCABULARY_COMMON = [
     eng: 'rest',
     article: 'die',
     noun: 'Ruhe',
-    plural: 'REPLACE',
+    plural: null,
     weakMasculine: false,
     notes: {},
     sentences: [
@@ -2260,12 +2297,12 @@ export const VOCABULARY_COMMON = [
   },
   {
     id: 125,
-    eng: 'right',
+    eng: 'right, law',
     article: 'das',
     noun: 'Recht',
-    plural: 'REPLACE',
+    plural: 'die Rechte',
     weakMasculine: false,
-    notes: {},
+    notes: {pluralNotes:["When it means 'law', 'justice', or 'legislation', there is no plural.", "'Die Rechte' means 'rights' or 'privileges'."]},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: '' },
       {
@@ -14666,9 +14703,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1003,
@@ -14680,9 +14717,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1004,
@@ -14694,9 +14731,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1005,
@@ -14708,9 +14745,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1006,
@@ -14722,9 +14759,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1007,
@@ -14736,9 +14773,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1008,
@@ -14750,9 +14787,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1009,
@@ -14764,9 +14801,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1010,
@@ -14778,9 +14815,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1011,
@@ -14792,9 +14829,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1012,
@@ -14806,9 +14843,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1013,
@@ -14820,9 +14857,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1014,
@@ -14834,9 +14871,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1015,
@@ -14848,9 +14885,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1016,
@@ -14862,9 +14899,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1017,
@@ -14876,9 +14913,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1018,
@@ -14890,9 +14927,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1019,
@@ -14904,9 +14941,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1020,
@@ -14918,9 +14955,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1021,
@@ -14932,9 +14969,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1022,
@@ -14946,9 +14983,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1023,
@@ -14960,9 +14997,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1024,
@@ -14974,9 +15011,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1025,
@@ -14988,9 +15025,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1026,
@@ -15002,9 +15039,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1027,
@@ -15016,9 +15053,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1028,
@@ -15030,9 +15067,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1029,
@@ -15044,9 +15081,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1030,
@@ -15058,9 +15095,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1031,
@@ -15072,9 +15109,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1032,
@@ -15086,9 +15123,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1033,
@@ -15100,9 +15137,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1034,
@@ -15114,9 +15151,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1035,
@@ -15128,9 +15165,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1036,
@@ -15142,9 +15179,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1037,
@@ -15156,9 +15193,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1038,
@@ -15170,9 +15207,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1039,
@@ -15184,9 +15221,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1040,
@@ -15198,9 +15235,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1041,
@@ -15212,9 +15249,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1042,
@@ -15226,9 +15263,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1043,
@@ -15240,9 +15277,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1044,
@@ -15254,9 +15291,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1045,
@@ -15268,9 +15305,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1046,
@@ -15282,9 +15319,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1047,
@@ -15296,9 +15333,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1048,
@@ -15310,9 +15347,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1049,
@@ -15324,9 +15361,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1050,
@@ -15338,9 +15375,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1051,
@@ -15352,9 +15389,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1052,
@@ -15366,9 +15403,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1053,
@@ -15380,9 +15417,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1054,
@@ -15394,9 +15431,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1055,
@@ -15408,9 +15445,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1056,
@@ -15422,9 +15459,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1057,
@@ -15436,9 +15473,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1058,
@@ -15450,9 +15487,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1059,
@@ -15464,9 +15501,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1060,
@@ -15478,9 +15515,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1061,
@@ -15492,9 +15529,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1062,
@@ -15506,9 +15543,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1063,
@@ -15520,9 +15557,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1064,
@@ -15534,9 +15571,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1065,
@@ -15548,9 +15585,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1066,
@@ -15562,9 +15599,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1067,
@@ -15576,9 +15613,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1068,
@@ -15590,9 +15627,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1069,
@@ -15604,9 +15641,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1070,
@@ -15618,9 +15655,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1071,
@@ -15632,9 +15669,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1072,
@@ -15646,9 +15683,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1073,
@@ -15660,9 +15697,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1074,
@@ -15674,9 +15711,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1075,
@@ -15688,9 +15725,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1076,
@@ -15702,9 +15739,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1077,
@@ -15716,9 +15753,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1078,
@@ -15730,9 +15767,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1079,
@@ -15744,9 +15781,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1080,
@@ -15758,9 +15795,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1081,
@@ -15772,9 +15809,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1082,
@@ -15786,9 +15823,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1083,
@@ -15800,9 +15837,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1084,
@@ -15814,9 +15851,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1085,
@@ -15828,9 +15865,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1086,
@@ -15842,9 +15879,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1087,
@@ -15856,9 +15893,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1088,
@@ -15870,9 +15907,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1089,
@@ -15884,9 +15921,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1090,
@@ -15898,9 +15935,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1091,
@@ -15912,9 +15949,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1092,
@@ -15926,9 +15963,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1093,
@@ -15940,9 +15977,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1094,
@@ -15954,9 +15991,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1095,
@@ -15968,9 +16005,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1096,
@@ -15982,9 +16019,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1097,
@@ -15996,9 +16033,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1098,
@@ -16010,9 +16047,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1099,
@@ -16024,9 +16061,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1100,
@@ -16038,9 +16075,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1101,
@@ -16052,9 +16089,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1102,
@@ -16066,9 +16103,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1103,
@@ -16080,9 +16117,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1104,
@@ -16094,9 +16131,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1105,
@@ -16108,9 +16145,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1106,
@@ -16122,9 +16159,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1107,
@@ -16136,9 +16173,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1108,
@@ -16150,9 +16187,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1109,
@@ -16164,9 +16201,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1110,
@@ -16178,9 +16215,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1111,
@@ -16192,9 +16229,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1112,
@@ -16206,9 +16243,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1113,
@@ -16220,9 +16257,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1114,
@@ -16234,9 +16271,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1115,
@@ -16248,9 +16285,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1116,
@@ -16262,9 +16299,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1117,
@@ -16276,9 +16313,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1118,
@@ -16290,9 +16327,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1119,
@@ -16304,9 +16341,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1120,
@@ -16318,9 +16355,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1121,
@@ -16332,9 +16369,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1122,
@@ -16346,9 +16383,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1123,
@@ -16360,9 +16397,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1124,
@@ -16374,9 +16411,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1125,
@@ -16388,9 +16425,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1126,
@@ -16402,9 +16439,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1127,
@@ -16416,9 +16453,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1128,
@@ -16430,9 +16467,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1129,
@@ -16444,9 +16481,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1130,
@@ -16458,9 +16495,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1131,
@@ -16472,9 +16509,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1132,
@@ -16486,9 +16523,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1133,
@@ -16500,9 +16537,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1134,
@@ -16514,9 +16551,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1135,
@@ -16528,9 +16565,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1136,
@@ -16542,9 +16579,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1137,
@@ -16556,9 +16593,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1138,
@@ -16570,9 +16607,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1139,
@@ -16584,9 +16621,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1140,
@@ -16598,9 +16635,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1141,
@@ -16612,9 +16649,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1142,
@@ -16626,9 +16663,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1143,
@@ -16640,9 +16677,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1144,
@@ -16654,9 +16691,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1145,
@@ -16668,9 +16705,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1146,
@@ -16682,9 +16719,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1147,
@@ -16696,9 +16733,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1148,
@@ -16710,9 +16747,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1149,
@@ -16724,9 +16761,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1150,
@@ -16738,9 +16775,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1151,
@@ -16752,9 +16789,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1152,
@@ -16766,9 +16803,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1153,
@@ -16780,9 +16817,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1154,
@@ -16794,9 +16831,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1155,
@@ -16808,9 +16845,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1156,
@@ -16822,9 +16859,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1157,
@@ -16836,9 +16873,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1158,
@@ -16850,9 +16887,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1159,
@@ -16864,9 +16901,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1160,
@@ -16878,9 +16915,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1161,
@@ -16892,9 +16929,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1162,
@@ -16906,9 +16943,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1163,
@@ -16920,9 +16957,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1164,
@@ -16934,9 +16971,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1165,
@@ -16948,9 +16985,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1166,
@@ -16962,9 +16999,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1167,
@@ -16976,9 +17013,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1168,
@@ -16990,9 +17027,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1169,
@@ -17004,9 +17041,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1170,
@@ -17018,9 +17055,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1171,
@@ -17032,9 +17069,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1172,
@@ -17046,9 +17083,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1173,
@@ -17060,9 +17097,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1174,
@@ -17074,9 +17111,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1175,
@@ -17088,9 +17125,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1176,
@@ -17102,9 +17139,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1177,
@@ -17116,9 +17153,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1178,
@@ -17130,9 +17167,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1179,
@@ -17144,9 +17181,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1180,
@@ -17158,9 +17195,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1181,
@@ -17172,9 +17209,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1182,
@@ -17186,9 +17223,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1183,
@@ -17200,9 +17237,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1184,
@@ -17214,9 +17251,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1185,
@@ -17228,9 +17265,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1186,
@@ -17242,9 +17279,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1187,
@@ -17256,9 +17293,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1188,
@@ -17270,9 +17307,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1189,
@@ -17284,9 +17321,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1190,
@@ -17298,9 +17335,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1191,
@@ -17312,9 +17349,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1192,
@@ -17326,9 +17363,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1193,
@@ -17340,9 +17377,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1194,
@@ -17354,9 +17391,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1195,
@@ -17368,9 +17405,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1196,
@@ -17382,9 +17419,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1197,
@@ -17396,9 +17433,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1198,
@@ -17410,9 +17447,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1199,
@@ -17424,9 +17461,9 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
+    completed: false,
   },
   {
     id: 1200,
@@ -17438,14 +17475,1429 @@ export const VOCABULARY_COMMON = [
     notes: {},
     sentences: [
       { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
-      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' }
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
     ],
-    completed: false
-  }
-
-
-
-
-
-
+    completed: false,
+  },
+  {
+    id: 1201,
+    eng: 'wish',
+    article: 'der',
+    noun: 'Wunsch',
+    plural: 'die Wünsche',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1202,
+    eng: 'ridge',
+    article: 'der',
+    noun: 'Bergrücken',
+    plural: 'die Bergrücken',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1203,
+    eng: 'idiot',
+    article: 'der',
+    noun: 'Idiot',
+    plural: 'die Idioten',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1204,
+    eng: 'bull',
+    article: 'der',
+    noun: 'Stier',
+    plural: 'die Stiere',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1205,
+    eng: 'seed',
+    article: 'der',
+    noun: 'Samen',
+    plural: 'die Samen',
+    weakMasculine: true,
+    notes: {
+      weakMascNote: 'takes -ns in the genitive singular',
+    },
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1206,
+    eng: 'progress',
+    article: 'der',
+    noun: 'Fortschritt',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1207,
+    eng: 'feel',
+    article: 'das',
+    noun: 'Gefühl',
+    plural: 'die Gefühle',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1208,
+    eng: 'shorts',
+    article: 'die',
+    noun: 'kurze Hose',
+    plural: 'die kurze Hosen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1209,
+    eng: 'citizen',
+    article: 'der',
+    noun: 'Bürger',
+    plural: 'die Bürger',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1210,
+    eng: 'trash',
+    article: 'der',
+    noun: 'Müll',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1211,
+    eng: 'log',
+    article: 'der',
+    noun: 'Baumstamm',
+    plural: 'die Baumstämme',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1212,
+    eng: 'patience',
+    article: 'die',
+    noun: 'Geduld',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1213,
+    eng: 'bat',
+    article: 'die',
+    noun: 'Fledermaus',
+    plural: 'die Fledermäuse',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1214,
+    eng: 'football',
+    article: 'der',
+    noun: 'Fußball',
+    plural: 'die Fußbälle',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1215,
+    eng: 'routine',
+    article: 'die',
+    noun: 'Routine',
+    plural: 'die Routinen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1216,
+    eng: 'explosion',
+    article: 'die',
+    noun: 'Explosion',
+    plural: 'die Explosionen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1217,
+    eng: 'content',
+    article: 'der',
+    noun: 'Inhalt',
+    plural: 'die Inhalte',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1218,
+    eng: 'scientist',
+    article: 'der',
+    noun: 'Wissenschaftler',
+    plural: 'die Wissenschaftler',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1219,
+    eng: 'failure',
+    article: 'das',
+    noun: 'Versagen',
+    plural: 'die Versagen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1220,
+    eng: 'sin',
+    article: 'die',
+    noun: 'Sünde',
+    plural: 'die Sünden',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1221,
+    eng: 'butt',
+    article: 'der',
+    noun: 'Hintern',
+    plural: 'die Hintern',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1222,
+    eng: 'confusion',
+    article: 'die',
+    noun: 'Verwirrung',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1223,
+    eng: 'understanding',
+    article: 'das',
+    noun: 'Verständnis',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1224,
+    eng: 'trade',
+    article: 'der',
+    noun: 'Handel',
+    plural: 'die Handel',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1225,
+    eng: 'refrigerator',
+    article: 'der',
+    noun: 'Kühlschrank',
+    plural: 'die Kühlschränke',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1226,
+    eng: 'mister',
+    article: 'der',
+    noun: 'Herr',
+    plural: 'die Herren',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1227,
+    eng: 'flashlight',
+    article: 'die',
+    noun: 'Taschenlampe',
+    plural: 'die Taschenlampen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1228,
+    eng: 'net',
+    article: 'das',
+    noun: 'Netz',
+    plural: 'die Netze',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1229,
+    eng: 'sailor',
+    article: 'der',
+    noun: 'Matrose',
+    plural: 'die Matrosen',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1230,
+    eng: 'attitude',
+    article: 'die',
+    noun: 'Einstellung',
+    plural: 'die Einstellungen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1231,
+    eng: 'guilt',
+    article: 'die',
+    noun: 'Schuld',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1232,
+    eng: 'crying',
+    article: 'das',
+    noun: 'Weinen',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1233,
+    eng: 'sip',
+    article: 'der',
+    noun: 'Schluck',
+    plural: 'die Schlucke',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1234,
+    eng: 'travel',
+    article: 'das',
+    noun: 'Reisen',
+    plural: 'die Reisen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1235,
+    eng: 'cookie',
+    article: 'der',
+    noun: 'Keks',
+    plural: 'die Kekse',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1236,
+    eng: 'escape',
+    article: 'die',
+    noun: 'Flucht',
+    plural: 'die Fluchten',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1237,
+    eng: 'instruction',
+    article: 'die',
+    noun: 'Anweisung',
+    plural: 'die Anweisungen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1238,
+    eng: 'fabric',
+    article: 'der',
+    noun: 'Stoff',
+    plural: 'die Stoffe',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1239,
+    eng: 'marble',
+    article: 'der',
+    noun: 'Marmor',
+    plural: 'die Marmore',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1240,
+    eng: 'glimpse',
+    article: 'der',
+    noun: 'Blick',
+    plural: 'die Blicke',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1241,
+    eng: 'dusk',
+    article: 'die',
+    noun: 'Dämmerung',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1242,
+    eng: 'cottage',
+    article: 'die',
+    noun: 'Hütte',
+    plural: 'die Hütten',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1243,
+    eng: 'monkey',
+    article: 'der',
+    noun: 'Affe',
+    plural: 'die Affen',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1244,
+    eng: 'makeup',
+    article: 'das',
+    noun: 'Make-up',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1245,
+    eng: 'doc',
+    article: 'der',
+    noun: 'Arzt',
+    plural: 'die Ärzte',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1246,
+    eng: 'blouse',
+    article: 'die',
+    noun: 'Bluse',
+    plural: 'die Blusen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1247,
+    eng: 'rhythm',
+    article: 'der',
+    noun: 'Rhythmus',
+    plural: 'die Rhythmen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1248,
+    eng: 'steam',
+    article: 'der',
+    noun: 'Dampf',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1249,
+    eng: 'phrase',
+    article: 'die',
+    noun: 'Phrase',
+    plural: 'die Phrasen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1250,
+    eng: 'nut',
+    article: 'die',
+    noun: 'Mutter',
+    plural: 'die Muttern',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1251,
+    eng: 'pencil',
+    article: 'der',
+    noun: 'Bleistift',
+    plural: 'die Bleistifte',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1252,
+    eng: 'cook',
+    article: 'der',
+    noun: 'Koch',
+    plural: 'die Köche',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1253,
+    eng: 'flag',
+    article: 'die',
+    noun: 'Flagge',
+    plural: 'die Flaggen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1254,
+    eng: 'coach',
+    article: 'der',
+    noun: 'Trainer',
+    plural: 'die Trainer',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1255,
+    eng: 'swing',
+    article: 'der',
+    noun: 'Schwung',
+    plural: 'die Schwünge',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1256,
+    eng: 'speaker',
+    article: 'der',
+    noun: 'Lautsprecher',
+    plural: 'die Lautsprecher',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1257,
+    eng: 'bolt',
+    article: 'der',
+    noun: 'Bolzen',
+    plural: 'die Bolzen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1258,
+    eng: 'fat',
+    article: 'das',
+    noun: 'Fett',
+    plural: 'die Fette',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1259,
+    eng: 'rug',
+    article: 'der',
+    noun: 'Teppich',
+    plural: 'die Teppiche',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1260,
+    eng: 'knock',
+    article: 'das',
+    noun: 'Klopfen',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1261,
+    eng: 'spell',
+    article: 'der',
+    noun: 'Zauber',
+    plural: 'die Zauber',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1262,
+    eng: 'taxi',
+    article: 'das',
+    noun: 'Taxi',
+    plural: 'die Taxis',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1263,
+    eng: 'round',
+    article: 'die',
+    noun: 'Runde',
+    plural: 'die Runden',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1264,
+    eng: 'straw',
+    article: 'der',
+    noun: 'Strohhalm',
+    plural: 'die Strohhalme',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1265,
+    eng: 'hatch',
+    article: 'die',
+    noun: 'Luke',
+    plural: 'die Luken',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1266,
+    eng: 'fork',
+    article: 'die',
+    noun: 'Gabel',
+    plural: 'die Gabeln',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1267,
+    eng: 'evil',
+    article: 'das',
+    noun: 'Böse',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1268,
+    eng: 'maid',
+    article: 'das',
+    noun: 'Dienstmädchen',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1269,
+    eng: 'relative',
+    article: 'der',
+    noun: 'Verwandte',
+    plural: 'die Verwandten',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1270,
+    eng: 'witch',
+    article: 'die',
+    noun: 'Hexe',
+    plural: 'die Hexen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1271,
+    eng: 'courtyard',
+    article: 'der',
+    noun: 'Innenhof',
+    plural: 'die Innenhöfe',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1272,
+    eng: 'sensation',
+    article: 'die',
+    noun: 'Sensation',
+    plural: 'die Sensationen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1273,
+    eng: 'bubble',
+    article: 'die',
+    noun: 'Blase',
+    plural: 'die Blasen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1274,
+    eng: 'reader',
+    article: 'der',
+    noun: 'Leser',
+    plural: 'die Leser',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1275,
+    eng: 'curl',
+    article: 'die',
+    noun: 'Locke',
+    plural: 'die Locken',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1276,
+    eng: 'pie',
+    article: 'der',
+    noun: 'Kuchen',
+    plural: 'die Kuchen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1277,
+    eng: 'jet',
+    article: 'das',
+    noun: 'Düsenflugzeug',
+    plural: 'die Düsenflugzeuge',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1278,
+    eng: 'shift',
+    article: 'die',
+    noun: 'Schicht',
+    plural: 'die Schichten',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1279,
+    eng: 'union',
+    article: 'die',
+    noun: 'Union',
+    plural: 'die Unionen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1280,
+    eng: 'teenager',
+    article: 'der',
+    noun: 'Teenager',
+    plural: 'die Teenager',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1281,
+    eng: 'plain',
+    article: 'die',
+    noun: 'Ebene',
+    plural: 'die Ebenen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1282,
+    eng: 'waitress',
+    article: 'die',
+    noun: 'Kellnerin',
+    plural: 'die Kellnerinnen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1283,
+    eng: 'reply',
+    article: 'die',
+    noun: 'Antwort',
+    plural: 'die Antworten',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1284,
+    eng: 'rumor',
+    article: 'das',
+    noun: 'Gerücht',
+    plural: 'die Gerüchte',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1285,
+    eng: 'gravity',
+    article: 'die',
+    noun: 'Schwerkraft',
+    plural: 'REPLACE',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1286,
+    eng: 'shelter',
+    article: 'der',
+    noun: 'Schutz',
+    plural: 'die Schutz',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1287,
+    eng: 'adventure',
+    article: 'das',
+    noun: 'Abenteuer',
+    plural: 'die Abenteuer',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1288,
+    eng: 'lion',
+    article: 'der',
+    noun: 'Löwe',
+    plural: 'die Löwen',
+    weakMasculine: true,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1289,
+    eng: 'spine',
+    article: 'die',
+    noun: 'Wirbelsäule',
+    plural: 'die Wirbelsäulen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1290,
+    eng: 'confidence',
+    article: 'das',
+    noun: 'Vertrauen',
+    plural: 'die Vertrauen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1291,
+    eng: 'depth',
+    article: 'die',
+    noun: 'Tiefe',
+    plural: 'die Tiefen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1292,
+    eng: 'reach',
+    article: 'die',
+    noun: 'Reichweite',
+    plural: 'die Reichweiten',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1293,
+    eng: 'hammer',
+    article: 'der',
+    noun: 'Hammer',
+    plural: 'die Hämmer',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1294,
+    eng: 'bible',
+    article: 'die',
+    noun: 'Bibel',
+    plural: 'die Bibeln',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1295,
+    eng: 'contract',
+    article: 'der',
+    noun: 'Vertrag',
+    plural: 'die Verträge',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1296,
+    eng: 'wallet',
+    article: 'die',
+    noun: 'Brieftasche',
+    plural: 'die Brieftaschen',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1297,
+    eng: 'jungle',
+    article: 'der',
+    noun: 'Dschungel',
+    plural: 'die Dschungel',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1298,
+    eng: 'factory',
+    article: 'die',
+    noun: 'Fabrik',
+    plural: 'die Fabriken',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1299,
+    eng: 'indian',
+    article: 'der',
+    noun: 'Indianer',
+    plural: 'die Indianer',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1300,
+    eng: 'balcony',
+    article: 'der',
+    noun: 'Balkon',
+    plural: 'die Balkone',
+    weakMasculine: false,
+    notes: {},
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
+  {
+    id: 1301,
+    eng: 'rice',
+    article: 'der',
+    noun: 'Reis',
+    plural: 'die Reise',
+    weakMasculine: false,
+    notes: {
+      pluralNotes: [
+        'usually uncountable',
+        'When referring to different rice types, the plural is used.',
+      ],
+    },
+    sentences: [
+      { de: 'SATZ1', en: 'SENTENCE1', case: 'nom' },
+      { de: 'SATZ2', en: 'SENTENCE2', case: 'acc' },
+    ],
+    completed: false,
+  },
 ];
