@@ -350,8 +350,8 @@ export const VOCABULARY_COMMON = [
         case: 'nom',
       },
       {
-        de: 'Der Mann des Hauses sitzt auf dem Stuhl',
-        en: 'The man of the house sits on the chair',
+        de: 'Der Mann des Hauses sitzt auf dem Stuhl.',
+        en: 'The man of the house sits on the chair.',
         case: 'gen',
       },
     ],
@@ -366,14 +366,14 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'SATZ1', en: 'SENTENCE1', case: '' },
+      { de: 'Mein Vater heißt Richard.', en: 'My father\'s name is Richard.', case: 'nom' },
       {
-        de: 'SATZ2',
-        en: 'SENTENCE2',
-        case: '',
+        de: 'Die Väter von Olav kommen aus Schweden.',
+        en: 'Olav\'s fathers come from Sweden.',
+        case: 'nom',
       },
     ],
-    completed: false,
+    completed: true,
   },
   {
     id: 19,
@@ -382,16 +382,16 @@ export const VOCABULARY_COMMON = [
     noun: 'Leben',
     plural: 'die Leben',
     weakMasculine: false,
-    notes: {},
+    notes: {pluralNotes: ['When meaning "living", there is no plural (eg. high living / luxuriöses Leben']},
     sentences: [
-      { de: 'SATZ1', en: 'SENTENCE1', case: '' },
+      { de: 'Die Linien zwischen Arbeitsleben und dem Leben zu Hause sind oft verwischt.', en: 'The lines between working life and home life are often blurred.', case: 'dat' },
       {
-        de: 'SATZ2',
-        en: 'SENTENCE2',
-        case: '',
+        de: 'Katja hat in ihrem Leben noch nie einen Apfel gegessen.',
+        en: 'Katja has never eaten an apple in her life.',
+        case: 'dat',
       },
     ],
-    completed: false,
+    completed: true,
   },
   {
     id: 20,
@@ -402,14 +402,14 @@ export const VOCABULARY_COMMON = [
     weakMasculine: false,
     notes: {},
     sentences: [
-      { de: 'SATZ1', en: 'SENTENCE1', case: '' },
+      { de: 'Sie stärkten mir in allem den Rücken.', en: 'They backed me up in everything.', case: 'acc' },
       {
-        de: 'SATZ2',
-        en: 'SENTENCE2',
-        case: '',
+        de: 'Er legte sich auf den Rücken.',
+        en: 'He lay on his back.',
+        case: 'acc',
       },
     ],
-    completed: false,
+    completed: true,
   },
   {
     id: 21,
